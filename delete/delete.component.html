@@ -1,0 +1,12 @@
+<p>delete works!</p>
+<form (ngSubmit)="addVal()">
+    <label for="productCode">Product Code:</label>
+    <input
+      id="productCode"
+      type="text"
+      [(ngModel)]="Product_ID"
+      name="productCode"
+      required
+    >
+    <button type="submit">Find Product</button>
+  </form>
