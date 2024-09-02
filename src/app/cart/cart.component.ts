@@ -76,7 +76,7 @@ export class CartComponent{
   getProducts() {
     this.http
          .get<ProductProfile[]>(
-            'http://localhost/bo/product_get.php',
+            'http://localhost:8080/bo/product_get.php',
             {params: this.searchkey}
          ).pipe(
              catchError( () => of(null) ),
